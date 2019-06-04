@@ -1,0 +1,66 @@
+Bookstroe Project
+-----------------
+- book
+	- book_id 			=>	int
+	- book_cover		=>	text
+	- book_title		=>	varchar ( 255 )
+	- book_price		=>	varchar ( 255 )
+	- book_pdf			=>	text
+	- book_edition 		=>	int
+	- book_description	=>	text
+	- book_authorid		=>	int
+	- book_categoryid	=>	int
+
+- author
+	- author_id			=>	int
+	- author_photo		=>	text
+	- author_name		=>	varchar ( 255 )
+	- author_address	=>	text
+	- author_email		=>	varchar ( 255 )
+	- author_gender		=>	varchar ( 20 )
+	- author_dob		=>	varchar ( 255 )
+	- author_bio		=>	text
+
+
+- genre
+	- genre_id		=>	int
+	- genre_name	=>	varchar ( 255 )
+
+- user
+	- user_id			=>	int
+	- user_photo		=>	text
+	- user_name			=>	varchar ( 255 )
+	- user_email		=>	varchar ( 255 )
+	- user_password		=>	varchar ( 255 )
+	- user_gender		=>	varchar ( 20 )
+	- user_phno			=>	varchar ( 255 )
+	- user_address		=>	text
+
+- order
+	- order_id 			=>	int
+	- order_voucherno	=>	varchar ( 255 )
+	- order_qty			=>	int
+	- order_date		=>	date
+	- order_bookid		=>	int
+	- order_userid		=>	int
+
+- orderdetail
+	- orderdetail_id			=> int
+	- orderdetail_voucherno		=> varchar ( 255 )
+	- orderdetail_total			=> varchar ( 255 )
+
+
+- library
+	- library_id 			=>	int
+	- library_name			=>	varchar ( 255 )
+	- library_logo			=>	varchar ( 255 )
+	- library_address		=>	text
+	- library_phno			=>	varchar ( 255 )
+	- library_day			=> 	varhcar ( 255 )
+	- library_time			=>	varchar ( 255 )
+
+
+
+
+
+

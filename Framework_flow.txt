@@ -1,0 +1,38 @@
+Framework
+----------
+1. route
+	bookstoreci/application/config/routes.php	
+
+2. Controller
+	bookstoreci/application/controllers
+
+	Rules 
+	=> File Name and Class Name are same
+	=> First Word CAPITAL Letter
+
+3. Model
+	bookstoreci/application/models
+
+	Rules
+	=> File Name and Class Name are same
+	=> First Word CAPITAL Letter
+	=> Declare Model which create new
+		(bookstoreci/application/config/autoload.php)
+
+4. View
+	bookstoreci/application/views
+
+
+5. Database Connect
+	bookstoreci/application/config/database.php
+		-> username
+		-> password
+		-> database
+
+
+
+
+
+
+
+
