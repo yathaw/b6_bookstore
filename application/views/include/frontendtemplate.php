@@ -57,7 +57,7 @@
 			<nav class="navbar navbar-expand-lg navbar-light">
 				<div class="container-fluid">
 					<!-- Brand and toggle get grouped for better mobile display -->
-					<a class="navbar-brand logo_h text-primary" href="index.html">
+					<a class="navbar-brand logo_h text-primary" href="<?php echo base_url(); ?>">
 						<img src="<?php echo base_url(); ?>template/frontend/img/book_logo.png" alt="" class="img-fluid" style="width: 50px; height: 50px;">
 						World Book
 					</a>
@@ -73,7 +73,32 @@
 							<div class="col-lg-7 pr-0">
 								<ul class="nav navbar-nav center_nav pull-right">
 									<li class="nav-item active">
-										<a class="nav-link" href="">Home</a>
+										<a class="nav-link" href="<?php echo base_url()?>">Home</a>
+									</li>
+
+									<li class="nav-item submenu dropdown">
+										<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Genre </a>
+										<ul class="dropdown-menu" style="overflow-y: scroll; height: 300px">
+
+											<li class="nav-item">
+												<a class="nav-link" href="<?php echo base_url('all')?>">
+													All Books
+												</a>
+
+												<a class="nav-link" href="<?php echo base_url('free')?>">
+													Free Books
+												</a>
+
+												<a class="nav-link" href="<?php echo base_url('premium')?>">
+													Premium Books
+												</a>
+
+												<a class="nav-link" href="<?php echo base_url('request')?>">
+													Request Books
+												</a>
+											</li>
+											
+										</ul>
 									</li>
 
 									<li class="nav-item submenu dropdown">
@@ -112,7 +137,7 @@
 										?>
 
 											<li class="nav-item">
-												<a class="nav-link" href="<?php echo base_url('genre/detail/'.$author_id) ?>">
+												<a class="nav-link" href="<?php echo base_url('genre/detail/'.$genre_id) ?>">
 													<?php echo $genre_name; ?>
 												</a>
 											</li>
@@ -122,11 +147,13 @@
 									</li>
 									
 									<li class="nav-item">
-										<a class="nav-link" href="">Library</a>
+										<a class="nav-link" href="<?php echo base_url('library') ?>">Library</a>
 									</li>
+
+									
 									
 									<li class="nav-item">
-										<a class="nav-link" href="contact.html">Contact</a>
+										<a class="nav-link" href="<?php echo base_url('contact') ?>">Contact</a>
 									</li>
 								</ul>
 							</div>

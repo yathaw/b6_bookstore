@@ -216,7 +216,7 @@
 		</div>
 		<div class="card-action">
 			<button type="submit" class="btn btn-primary"> 
-				<i class="fas fa-save"></i> Save
+				<i class="fas fa-upload"></i> Update
 			</button>
 			<button type="reset" class="btn btn-danger">
 				<i class="fas fa-times"></i>Cancel

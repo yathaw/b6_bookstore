@@ -59,12 +59,22 @@ $route['translate_uri_dashes'] = FALSE;
 $route['default_controller'] = 'Frontend_ctrl';
 $route['book/detail/:num'] = 'Frontend_ctrl/book_detail';
 $route['author/detail/:num'] = 'Frontend_ctrl/author_detail';
+$route['genre/detail/:num'] = 'Frontend_ctrl/genre_detail';
+$route['library'] = 'Frontend_ctrl/libraries';
+
+$route['all'] = 'Frontend_ctrl/all';
+$route['free'] = 'Frontend_ctrl/free';
+$route['premium'] = 'Frontend_ctrl/premium';
+$route['request'] = 'Frontend_ctrl/request';
 $route['order'] = 'Frontend_ctrl/order';
 
+//Authentication
 $route['login'] = 'Auth_ctrl';
-$route['register'] = 'Auth_ctrl/register';
 $route['validation'] = 'Auth_ctrl/validation';
 $route['logout'] = 'Auth_ctrl/logout';
+
+$route['register'] = 'Auth_ctrl/register';
+$route['check'] = 'Auth_ctrl/register';
 
 
 // Author
@@ -92,6 +102,7 @@ $route['backend/genre/store'] = 'Genre_ctrl/store';
 $route['backend/genre/edit/:num'] = 'Genre_ctrl/edit';
 $route['backend/genre/delete/:num'] = 'Genre_ctrl/delete';
 $route['backend/genre/detail/:num'] = 'Genre_ctrl/detail';
+$route['backend/genre/update'] = 'Genre_ctrl/update';
 
 // Library
 $route['backend/library'] = 'Library_ctrl';
@@ -100,7 +111,7 @@ $route['backend/library/store'] = 'Library_ctrl/store';
 $route['backend/library/detail/:num'] ='Library_ctrl/detail';
 $route['backend/library/edit/:num'] = 'Library_ctrl/edit';
 $route['backend/library/delete/:num'] = 'Library_ctrl/delete';
-
+$route['backend/library/update'] = 'Library_ctrl/update';
 
 
 

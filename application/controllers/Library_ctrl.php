@@ -64,6 +64,28 @@ class Library_ctrl extends CI_Controller
 
 	}
 
+	public function edit()
+	{
+		$id = $this->uri->segment(4);
+
+		$data['library'] = $this->Library_mdl->detail($id);
+
+		$data['innerdata'] = 'library/edit';
+
+		$this->load->view('include/backendtemplate',$data);
+
+	}
+
+	public function update()
+	{
+		$this->Library_mdl->update();
+
+		$this->session->set_flashdata('success', 'Your data is updated. You should check in on some of those fields below.');
+
+		return redirect('backend/library','refresh');
+
+	}
+
 }
 
 ?>

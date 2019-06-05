@@ -45,7 +45,7 @@ class Library_mdl extends CI_Model
 	public function upload_img($image) 
 	{
 		$file = $_FILES[$image]['name']; // 1.jpg
-		$filepath = 'image/library/logo'.$file; // image/author/1.jpg
+		$filepath = 'image/library/logo/'.$file; // image/author/1.jpg
 		
 		$config['upload_path']='image/library/logo';
 		$config['allowed_types']= 'gif|jpg|jpeg|png';
@@ -84,6 +84,41 @@ class Library_mdl extends CI_Model
   		return $this->db->query($sql);
   	}
 
+  	public function update()
+  	{
+  		if ($_FILES['newPhoto']['name'] == NULL) 
+  		{
+  			$image['data'] = $this->input->post('oldimage');
+  		}
+
+  		else
+  		{
+  			$image = $this->Library_mdl->upload_img('newPhoto');
+  		}
+
+  		$id = $this->input->post('id');
+  		$name = $this->input->post('name');
+		$address = $this->input->post('address');
+		$phone = $this->input->post('phone');
+		$day = $this->input->post('day');
+		$time = $this->input->post('time');
+
+		$data = array(
+			'libraries_name'		=> $name,
+			'libraries_logo' 		=> $image['data'],
+			'libraries_cover'		=> '',
+			'libraries_gallery'		=> '',
+			'libraries_address'		=> $address,
+			'libraries_phno'		=> $phone,
+			'libraries_day'			=> $day,
+			'libraries_time'		=> $time,
+		);
+
+		$this->db->where('libraries_id',$id);
+		$result = $this->db->update('libraries',$data);
+
+		return $result;
+  	}
 
 
 }

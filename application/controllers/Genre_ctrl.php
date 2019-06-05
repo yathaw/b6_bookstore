@@ -64,6 +64,27 @@ class Genre_ctrl extends CI_Controller
 
 	}
 
+	public function edit()
+	{
+		$id = $this->uri->segment(4);
+
+		$data['genre'] = $this->Genre_mdl->detail($id);
+
+		$data['innerdata'] = 'genre/edit';
+
+		$this->load->view('include/backendtemplate',$data);
+
+	}
+
+	public function update()
+	{
+		$this->Genre_mdl->update();
+
+		$this->session->set_flashdata('success', 'Your data is updated. You should check in on some of those fields below.');
+
+		return redirect('backend/genre','refresh');
+	}
+
 }
 
 ?>

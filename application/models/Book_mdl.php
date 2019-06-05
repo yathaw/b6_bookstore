@@ -152,7 +152,7 @@ class Book_mdl extends CI_Model
 
   		else
   		{
-  			$photo = $this->Author_mdl->upload_img('newPhoto');
+  			$photo = $this->Book_mdl->upload_img('newPhoto');
   		}
 
 		if ($price) // Premium

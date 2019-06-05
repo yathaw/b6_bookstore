@@ -54,5 +54,20 @@ class Genre_mdl extends CI_Model
 
   		return $sql->result();
   	}
+
+    public function update()
+    {
+      $id = $this->input->post('id');
+      $name = $this->input->post('name');
+
+      $data = array(
+        'genres_name'   => $name
+      );
+
+    $this->db->where('genres_id',$id);
+    $result = $this->db->update('genres',$data);
+
+    return $result;
+    }
 }
 ?>

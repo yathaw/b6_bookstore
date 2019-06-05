@@ -123,7 +123,7 @@
 				
 				<div class="row mt-5">
 					<div class="main_title">
-						<a href="<?php echo base_url('') ?>" class="submit_btn arrow" > 
+						<a href="<?php echo base_url('premium') ?>" class="submit_btn arrow" > 
 							More
 							<span class="lnr lnr-arrow-right"></span> 
 						</a>
@@ -186,7 +186,7 @@
 				
 				<div class="row mt-5">
 					<div class="main_title">
-						<a href="" class="submit_btn arrow" > 
+						<a href="<?php echo base_url('free') ?>" class="submit_btn arrow" > 
 							More
 							<span class="lnr lnr-arrow-right"></span> 
 						</a>

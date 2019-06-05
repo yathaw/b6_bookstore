@@ -31,30 +31,6 @@
 				<?php endforeach; ?>
 
 			</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 		</div>
 	</div>
 	<footer class="footer">
