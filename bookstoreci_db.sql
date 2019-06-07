@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jun 05, 2019 at 05:27 AM
+-- Generation Time: Jun 07, 2019 at 06:02 AM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.3.0
 
@@ -50,8 +50,7 @@ INSERT INTO `authors` (`authors_id`, `authors_photo`, `authors_name`, `authors_a
 (4, 'image/author/E_L_James.png', 'E. L. James', 'Willesden, London, England, UK																							', 'eljames@gmail.com', 'Female', '1963-03-07', '<p style=\"margin-right: 0px; margin-bottom: 26px; margin-left: 0px; padding: 0px; color: rgb(87, 87, 87); font-size: 16px;\">I’m a former TV executive, wife and mother-of-two based in the leafy suburbs of West London. I have been writing romantic fiction since 2009 and in 2012 my career took an extraordinary turn when my<em>&nbsp;Fifty Shades Trilogy&nbsp;</em>became a worldwide bestseller and subsequently a series of blockbuster movies.</p><p style=\"margin-right: 0px; margin-bottom: 26px; margin-left: 0px; padding: 0px; color: rgb(87, 87, 87); font-size: 16px;\">From an early age, I had dreamed of writing stories that readers would fall in love with—and now those dreams have come true, thanks to you guys.&nbsp; I hope that you take my new story&nbsp;<em>The Mister</em>&nbsp;to your heart just as you did&nbsp;<em>Fifty Shades.</em></p><p style=\"margin-right: 0px; margin-bottom: 26px; margin-left: 0px; padding: 0px; color: rgb(87, 87, 87); font-size: 16px;\">Thanks to all of you for your support—it has meant the world to me. If anyone were to ask me what lessons I’ve learned from my crazy adventures, I would say this: Life is not a dress rehearsal—seize the day and follow your dreams.</p><p style=\"margin-right: 0px; margin-bottom: 26px; margin-left: 0px; padding: 0px; color: rgb(87, 87, 87); font-size: 16px;\">I wish you the best of luck.</p><p style=\"margin-right: 0px; margin-bottom: 26px; margin-left: 0px; padding: 0px; color: rgb(87, 87, 87); font-size: 16px;\">EL<br>January 2019</p>																								\r\n											'),
 (5, 'image/author/Khin_Hnin_Yu.jpg', 'ခင္ႏွင္းယု', 'ဧရာဝတီတိုင္း ဝါးခယ္မၿမိဳ႕																', 'unknown@gmail.com', 'Female', '1925-09-07', '<font color=\"#0b0080\" face=\"mm3web, Myanmar Text, Myanmar3, TharLon, Noto Sans Myanmar, Masterpiece Uni Sans, Parabaik, Yunghkio, Thanlwin, Win Uni Innwa, Padauk, MyMyanmar Unicode, WinUni Innwa, Myanmar2\">ဧရာဝတီတိုင္း ဝါးခယ္မၿမိဳ႕၌ အဖ အစိုးရေက်ာင္းဆရာႀကီး ဦးဘ ၊ အမိ ေဒၚသိန္းတင္တို႔မွ ၁၉၂၅ခု ၊ စက္တင္ဘာ ရ ရက္ (တနလၤာေန႔) တြင္ဖြားျမင္သည္ ။ ေမြးခ်င္း ခုနစ္ေယာက္အနက္ ငါးေယာက္ေျမာက္ျဖစ္ၿပီး ဝန္ႀကီးခ်ဳပ္ ဦးႏု ႏွင့္ေမာင္ႏွမ ဝမ္းကြဲေတာ္စပ္ သူတစ္ဦးျဖစ္သည္ ။ ၁၉၅ဝ တြင္ ဗိုလ္ႀကီးေက်ာ္ေသာင္းႏွင့္ လက္ထပ္ခဲ့ကာ ၁၉၇ဝ တြင္ ခင္ပြန္းသည္ ကြယ္လြန္ခဲ့သည္ ။ ၁၉၈၅ မွ က်န္းမာေရးအလြန္ဆိုး႐ြားေသာေၾကာင့္ ေဆး႐ုံတြင္ ကုသမႈခံယူ ၿပီးေနာက္ \"ခ်မ္းေျမ့ရိပ္သာ\" တြင္ ေနထိုင္ခဲ့သည္ ။ ၂၀၀၃ ဇန္နဝါရီလ ၂၁ ရက္ (အဂၤါေန႔) နံနက္ (၈:၃၀) တြင္ ရန္ကုန္ျပည့္သူ႔ ေဆး႐ုံႀကီး၌ ကြယ္လြန္သည္။</font>'),
 (6, 'image/author/chanmyaewin.jpg', 'ခ်မ္းေျမ့၀င္း', 'Yangon, Myanmar																							', 'chanmyaewin@gmail.com', 'Male', '1984-01-25', '<div class=\"_5aj7 _3-8j\" style=\"display: flex; margin: 12px; font-family: system-ui, -apple-system, system-ui, &quot;.SFNSText-Regular&quot;, sans-serif; color: rgb(28, 30, 33); font-size: 12px;\"><div class=\"_4bl9\" style=\"overflow-wrap: break-word; overflow: hidden; flex: 1 0 0px; font-family: inherit;\"><div class=\"_3-8w\" style=\"margin-top: 4px; font-family: inherit;\">Translated/ Published Mark Manson\'s \"The Subtle Art of not giving a F*ck\" and Eric Weiner\'s \"The Geography of Bliss\" into Myanmar in 2018 Director of Innwa Books and Cafe and Zit Myit publishing.</div></div></div><div class=\"_5aj7 _3-8j\" style=\"display: flex; margin: 12px; font-family: system-ui, -apple-system, system-ui, &quot;.SFNSText-Regular&quot;, sans-serif; color: rgb(28, 30, 33); font-size: 12px;\"></div>'),
-(7, 'image/author/akyitaw.jpg', 'အၾကည္ေတာ္', 'Yangon																							', 'akyitaw@gmail.com', 'Male', '1963-12-01', 'asdfasdfasfasdfasdfasdfasdf'),
-(9, 'image/author/Newmooncover.jpg', 'aaa', '																																								asdfsdfasdfasd															asdfasdfasdf																																																																		', 'abc@gmail.com', 'Male', '1974-01-30', '																																																				asdfasdfadsf												\r\n																							\r\n																																			');
+(7, 'image/author/akyitaw.jpg', 'အၾကည္ေတာ္', 'Yangon																							', 'akyitaw@gmail.com', 'Male', '1963-12-01', 'asdfasdfasfasdfasdfasdfasdf');
 
 -- --------------------------------------------------------
 
@@ -176,8 +175,27 @@ INSERT INTO `libraries` (`libraries_id`, `libraries_name`, `libraries_logo`, `li
 CREATE TABLE `orderdetails` (
   `orderdetails_id` int(11) NOT NULL,
   `orderdetails_voucherno` varchar(255) NOT NULL,
-  `orderdetails_total` varchar(255) NOT NULL
+  `orderdetails_total` varchar(255) NOT NULL,
+  `orderdetails_status` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `orderdetails`
+--
+
+INSERT INTO `orderdetails` (`orderdetails_id`, `orderdetails_voucherno`, `orderdetails_total`, `orderdetails_status`) VALUES
+(3, 'uAvpr', '90000', 0),
+(4, 'wlceW', '90000', 0),
+(5, 'crpgw', '90000', 1),
+(6, 'xnVqG', '90000', 0),
+(7, 'HjDqO', '90000', 0),
+(8, 'XHTEP', '130000', 0),
+(9, 'LYSWh', '90000', 0),
+(10, '8LMe6', '110000', 0),
+(11, 'gNVMH', '150000', 1),
+(12, 'f5aXR', '150000', 0),
+(13, 'kWlnQ', '130000', 1),
+(14, '3NnD0', '150000', 1);
 
 -- --------------------------------------------------------
 
@@ -191,8 +209,40 @@ CREATE TABLE `orders` (
   `orders_qty` int(11) NOT NULL,
   `orders_date` date NOT NULL,
   `orders_bookid` int(11) NOT NULL,
-  `orders_userid` int(11) NOT NULL
+  `orders_userid` int(11) NOT NULL,
+  `orders_status` int(11) NOT NULL,
+  `orders_createdat` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `orders`
+--
+
+INSERT INTO `orders` (`orders_id`, `orders_voucherno`, `orders_qty`, `orders_date`, `orders_bookid`, `orders_userid`, `orders_status`, `orders_createdat`) VALUES
+(2, 'uAvpr', 1, '2019-06-06', 11, 3, 0, '2019-06-06 00:15:53'),
+(3, 'uAvpr', 2, '2019-06-06', 7, 3, 0, '2019-06-06 00:15:53'),
+(4, 'wlceW', 1, '2019-06-06', 11, 3, 0, '2019-06-06 00:15:53'),
+(5, 'wlceW', 2, '2019-06-06', 7, 3, 0, '2019-06-06 00:15:53'),
+(6, 'crpgw', 1, '2019-06-06', 11, 3, 0, '2019-06-06 00:15:53'),
+(7, 'crpgw', 2, '2019-06-06', 7, 3, 0, '2019-06-06 00:15:53'),
+(8, 'xnVqG', 1, '2019-06-06', 11, 3, 0, '2019-06-06 00:15:53'),
+(9, 'xnVqG', 2, '2019-06-06', 7, 3, 0, '2019-06-06 00:15:53'),
+(10, 'HjDqO', 1, '2019-06-06', 11, 3, 0, '2019-06-06 00:15:53'),
+(11, 'HjDqO', 2, '2019-06-06', 7, 3, 0, '2019-06-06 00:15:53'),
+(12, 'XHTEP', 2, '2019-06-06', 3, 3, 0, '2019-06-06 00:15:53'),
+(13, 'XHTEP', 1, '2019-06-06', 1, 3, 0, '2019-06-06 00:15:53'),
+(14, 'LYSWh', 1, '2019-06-06', 12, 3, 0, '2019-06-06 00:15:53'),
+(15, '8LMe6', 2, '2019-06-06', 1, 3, 0, '2019-06-06 00:15:53'),
+(16, '8LMe6', 1, '2019-06-06', 3, 3, 0, '2019-06-06 00:15:53'),
+(17, 'gNVMH', 1, '2019-06-06', 10, 3, 0, '2019-06-06 00:15:53'),
+(18, 'gNVMH', 2, '2019-06-06', 3, 3, 0, '2019-06-06 00:15:53'),
+(19, 'f5aXR', 2, '2019-06-06', 3, 3, 0, '2019-06-06 00:15:53'),
+(20, 'f5aXR', 1, '2019-06-06', 10, 3, 0, '2019-06-06 00:15:53'),
+(21, 'kWlnQ', 2, '2019-06-07', 9, 2, 0, '2019-06-07 00:21:42'),
+(22, 'kWlnQ', 1, '2019-06-07', 11, 2, 0, '2019-06-07 00:21:42'),
+(23, '3NnD0', 1, '2019-06-07', 8, 3, 0, '2019-06-07 00:22:26'),
+(24, '3NnD0', 1, '2019-06-07', 7, 3, 0, '2019-06-07 00:22:26'),
+(25, '3NnD0', 1, '2019-06-07', 1, 3, 0, '2019-06-07 00:22:26');
 
 -- --------------------------------------------------------
 
@@ -215,6 +265,31 @@ CREATE TABLE `publishers` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `requestbooks`
+--
+
+CREATE TABLE `requestbooks` (
+  `requestbooks_id` int(11) NOT NULL,
+  `requestbooks_title` varchar(255) NOT NULL,
+  `requestbooks_author` varchar(255) NOT NULL,
+  `requestbooks_description` text NOT NULL,
+  `requestbooks_date` date NOT NULL,
+  `requestbooks_userid` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `requestbooks`
+--
+
+INSERT INTO `requestbooks` (`requestbooks_id`, `requestbooks_title`, `requestbooks_author`, `requestbooks_description`, `requestbooks_date`, `requestbooks_userid`) VALUES
+(1, 'ခ်စ္သူနဲ႕ တစ္မိနစ္ တစ္စကၠန့္...', 'လေရာင္က်ဴးရင့္', 'စာေရးဆရာ လေရာင္က်ဴးရင့္ ရဲ့ . ခ်စ္သူနဲ႕ တစ္မိနစ္ တစ္စကၠန့္... ေလးတင္ေပးပါ။', '2019-06-06', 3),
+(2, 'အတုမရွိစည္ေတာ္', ' မင္းျမတ္သူရ', 'စာေရးဆရာ မင္းျမတ္သူရ ရဲ့ အတုမရွိစည္ေတာ္ ေလးတင္ေပးပါ', '2019-06-06', 3),
+(3, 'ငါဟာမင္းအတြက္', 'သ်ွင္မ', 'လူေတြရဲ႕ဘဝမွာ ကိုယ္လည္း ဖန္တီးခဲ့တဲ့ အျပစ္အနာအဆာ မဟုတ္ပါဘဲ ဒီ့အတြက္ေၾကာင့္ပဲ အႏွိမ္ခံဘဝနဲ႔ ရပ္တည္႐ွင္သန္ေနရင္ျခင္းက ရင္နာစရာေကာင္းလွပါတယ္။ ‘သ႑ာန္’ ဆိုတဲ့ လူငယ္ေလးတစ္ေယာက္ဟာလည္း ဘဝကို အဲဒီလို နည္းနဲ႔ ရွင္သန္ေနရသူပါ။ “အတြက္”ကေတာ့ မိတဆိုးသမီးေလးအျဖစ္ အလိုလိုက္ခံရတတ္တဲ့သူေတြရဲ႕ ထံုးစံအတိုင္း အရာ ရာကို တစ္ဖက္သတ္လုပ္တတ္တဲ့ အက်င့္စ႐ိုက္နဲ႔ ေကာင္မေလးပါ။ ဒီလိုလူငယ္ႏွစ္ဦးဟာ မထင္မွတ္ဘဲ ကေတာက္ကဆျဖစ္မႈေတြနဲ႔ ဆံုေတြ႕ၾကရတဲ့အခါ ‘အတြက္’ ကေတာ့ သူ႔စ႐ိုက္အတုိင္း တစ္ဖက္စီးနင္းေပါ့။ သ႑ာန္ကလည္း ဘဝမွာ အရာရာကို မ်ိဳသိပ္ငံု႔ခံလာခဲ့တဲ့ အက်င့္အတုိင္းပဲ ၿငိမ္သက္တိတ္ဆိတ္လို႔။ ဒါေပမယ့္ သ႑ာန္ရဲ႕ ရင္ထဲမွာေတာ့ ၿငိမ္သက္ တိတ္ဆိတ္ျခင္းမ႐ွိတဲ့ လိႈင္းတစ္ခုက အဲဒီအခ်ိန္မွာ ျဖတ္သန္း ႐ိုက္ခတ္လိုက္ပါေတာ့တယ္။ အဲဒါကေတာ့ အတြက္ကို ခ်စ္မိသြားတဲ့ ခ်စ္ျခင္းပါ။ ဒီဇာတ္လမ္းမွာ ထိုသို႔ အစပ်ိဳးမႈေတြနဲ႔ ဇာတ္ကြက္ကို ဖန္တီးထားရင္း ဘယ္သူဟာ ဘယ္သူအတြက္ ျဖစ္မွာလဲဆိုတဲ့ သ႐ုပ္ေဖာ္ဖြဲ႕ႏြဲ႕မႈက ထိမိလွပါတယ္။ ၿပီးေတာ့ ဒီဇာတ္လမ္းထဲက ကြယ္ဝွက္ထားတဲ့ အေၾကာင္းအရာတစ္ခ်ိဳ႕ကလည္း ဖတ္နဲ႔ရင္းနဲ႔ပဲ ဇာတ္လမ္းကို တစ္ဆစ္ခ်ိဳးေျပာင္းလဲသြားေစမွာမို႔ စာဖတ္သူတို႔ အႀကိဳက္ေတြ႕ေစမွာ ျဖစ္ေၾကာင္း ညႊန္းဆိုလိုက္ရပါတယ္။', '2019-06-06', 3),
+(4, 'သုုိ႔ .. ခ်စ္သူ', 'ဗ်ဴး', 'မဟာေသြး၊ မဟာမ်ိဳးဆက္ကို ထိန္းသိမ္းလိုတဲ့ မိသားစုႀကီးထဲက တစ္ဦးတည္းေသာ ေယာက္်ားတစ္ေယာက္ဟာ မ်ိဳးရိုးတူ ထိမ္းျမားလက္ထပ္ျခင္းကို မိဘေတြရဲ႕စီမံမႈနဲ႔ လုပ္ေဆာင္ခဲ့ေပမယ့္ သာယာေပ်ာ္ရႊင္တဲ့ အိမ္ေထာင္တစ္ခု ျဖစ္မလာခဲ့သလို၊ မ်ိဳးဆက္ေသြး ရ႐ွိဖို႔ကလည္း ေမွ်ာ္လင့္ခ်က္ေဝးခဲ့ရပါတယ္။ သို႔ေပမဲ့ မဟာေသြးကို မ်ိဳးဆက္ပြားေစမယ့္သူကေတာ့ ျပင္ပမွာ အေပ်ာ္႐ွာရင္း ေမွ်ာ္လင့္မထားတဲ့ မ်ိဳးဆက္ေသြးေတြ ျဖစ္လာေစခဲ့ပါတယ္။ အဲဒီမ်ိဳးဆက္ေသြးေတြဟာ မတူညီတဲ့ ေမြးဖြားမႈကေန အင္မတန္ကို လွပတဲ့ မိန္းမပ်ိဳငါးဦးကို ေပၚေပါက္လာေစျပန္ပါတယ္။ အတိတ္ဇာတ္ေၾကာင္းအသီးသီးနဲ႔ ဒီမိန္းမပ်ိဳငါးဦးဆီကို “သုိ႔ ..ခ်စ္ သူ” လို႔ ရည္ညႊန္းတဲ့ စာေတြ ေရာက္ရွိလာတဲ့အခါမွာ …. ။ ဆန္းၾကယ္တဲ့ ဇာတ္လမ္းေဖာ္က်ဴးမႈနဲ႔ စိတ္ဝင္စားဖြယ္ရသကို ေပးစြမ္းမယ့္ ဗ်ဴးရဲ႕ “သို႔ …ခ်စ္သူ” ပဲျဖစ္ပါတယ္။ ဝန္ဇင္းပရိသတ္ႀကီးလည္း ႀကိဳက္ႏွစ္သက္မွာ အေသအခ်ာပါပဲ။', '2019-06-07', 2);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `users`
 --
 
@@ -226,8 +301,18 @@ CREATE TABLE `users` (
   `users_password` varchar(255) NOT NULL,
   `users_gender` varchar(20) NOT NULL,
   `users_phno` varchar(255) NOT NULL,
-  `users_address` text NOT NULL
+  `users_address` text NOT NULL,
+  `role` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`users_id`, `users_photo`, `users_name`, `users_email`, `users_password`, `users_gender`, `users_phno`, `users_address`, `role`) VALUES
+(1, 'image/user/admin.jpg', 'Admin', 'admin@gmail.com', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 'Female', '0987654321', 'Yangon, Myanmar', 'admin'),
+(2, 'image/user/flora.jpg', 'Flora Brooks', 'flora@gmail.com', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'Female', 'image/user/flora.jpg', 'Yangon, Myanmar', 'user'),
+(3, 'image/user/chanmyaewin.jpg', 'John', 'john@gmail.com', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 'Male', '0987654321', '														Yangon, Myanmar									 	\r\n								 	\r\n								 	\r\n						', 'user');
 
 --
 -- Indexes for dumped tables
@@ -282,6 +367,12 @@ ALTER TABLE `publishers`
   ADD PRIMARY KEY (`publishers_id`);
 
 --
+-- Indexes for table `requestbooks`
+--
+ALTER TABLE `requestbooks`
+  ADD PRIMARY KEY (`requestbooks_id`);
+
+--
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -325,13 +416,13 @@ ALTER TABLE `libraries`
 -- AUTO_INCREMENT for table `orderdetails`
 --
 ALTER TABLE `orderdetails`
-  MODIFY `orderdetails_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `orderdetails_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `orders_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `orders_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT for table `publishers`
@@ -340,10 +431,16 @@ ALTER TABLE `publishers`
   MODIFY `publishers_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT for table `requestbooks`
+--
+ALTER TABLE `requestbooks`
+  MODIFY `requestbooks_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `users_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `users_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
