@@ -77,22 +77,27 @@
 									</li>
 
 									<li class="nav-item submenu dropdown">
-										<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Genre </a>
-										<ul class="dropdown-menu" style="overflow-y: scroll; height: 300px">
+										<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Book </a>
+										<ul class="dropdown-menu">
 
 											<li class="nav-item">
 												<a class="nav-link" href="<?php echo base_url('all')?>">
 													All Books
 												</a>
-
+											</li>
+											<li class="nav-item">
 												<a class="nav-link" href="<?php echo base_url('free')?>">
 													Free Books
 												</a>
-
+											</li>
+											
+											<li class="nav-item">
 												<a class="nav-link" href="<?php echo base_url('premium')?>">
 													Premium Books
 												</a>
-
+											</li>
+											
+											<li class="nav-item">
 												<a class="nav-link" href="<?php echo base_url('request')?>">
 													Request Books
 												</a>
@@ -169,13 +174,47 @@
 
 									<hr>
 
+									<?php if($session): ?>
+
+									<li class="nav-item submenu dropdown">
+										<a href="#" class="icons dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+											<i class="fa fa-user" aria-hidden="true"></i>
+										</a>
+											<ul class="dropdown-menu">
+
+												<li class="nav-item">
+													<a class="nav-link" href="<?php echo base_url('profile')?>">
+														Profile 
+													</a>
+												</li>
+
+												<li class="nav-item">
+													<a class="nav-link" href="<?php echo base_url('order/history')?>">
+														Order History 
+													</a>
+												</li>
+
+												<li class="nav-item">
+													<a class="nav-link" href="<?php echo base_url('logout')?>">
+														Logout 
+													</a>
+												</li>
+											</ul>
+									</li>
+
+									<hr>
+
+									<?php else: ?>
+
 									<li class="nav-item">
-										<a href="#" class="icons">
+										<a href="<?php echo base_url('login') ?>" class="icons">
 											<i class="fa fa-user" aria-hidden="true"></i>
 										</a>
 									</li>
 
 									<hr>
+
+									<?php endif; ?>
 
 									<li class="nav-item">
 										<a href="#" class="icons">

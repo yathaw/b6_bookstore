@@ -31,12 +31,32 @@
 				<div class="col-lg-6">
 					<div class="login_form_inner">
 						<h3>Log in to enter</h3>
-						<form class="row login_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+
+						<?php if(isset($error_message)): ?>
+							<div class="alert alert-dismissible alert-danger">
+								<button class="close" type="button" data-dismiss="alert"> X </button>
+								<strong> Try again! </strong> <br>
+								<?php echo $error_message; ?>
+							</div>
+						<?php endif; ?>
+
+						<?php if($this->session->flashdata('register')): ?>
+							<div class="alert alert-dismissible alert-success">
+								<button class="close" type="button" data-dismiss="alert"> X </button>
+								<strong> WELCOME!! </strong> <br>
+								<?php echo $this->session->flashdata('register') ?>
+							</div>
+						<?php endif; ?>
+
+						<form action="<?php echo base_url('authentication') ?>" method="POST" class="row login_form" id="contactForm" novalidate="novalidate">
 							<div class="col-md-12 form-group">
-								<input type="text" class="form-control" id="name" name="name" placeholder="Username">
+								<input type="email" class="form-control" id="name" name="email" placeholder="Email">
+								<span class="text-danger"> <?php echo form_error('email') ?> </span>
 							</div>
 							<div class="col-md-12 form-group">
-								<input type="text" class="form-control" id="name" name="name" placeholder="Password">
+								<input type="password" class="form-control" id="name" name="password" placeholder="Password">
+
+								<span class="text-danger"> <?php echo form_error('password') ?> </span>
 							</div>
 							<div class="col-md-12 form-group">
 								<div class="creat_account">

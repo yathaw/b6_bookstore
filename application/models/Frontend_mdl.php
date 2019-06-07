@@ -59,6 +59,17 @@ class Frontend_mdl extends CI_Model
 		return $sql->result();
 	}	
 
+	public function profile($id)
+	{
+		$this->db->select('*');
+		$this->db->from('users');
+		$this->db->where('users_id',$id);
+		$sql = $this->db->get();
+
+		return $sql->row_array();
+	}
+
+	
 
 
 }

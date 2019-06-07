@@ -2,6 +2,21 @@
 
 class Genre_ctrl extends CI_Controller
 {
+	function __construct()
+	{
+		parent:: __construct();
+		$session = $this->session->userdata('logged_in');
+		$role = $session['role'];
+
+		if ($role == 'admin') 
+		{
+			$this->router->fetch_class();
+		}
+		else
+		{
+			redirect('login');
+		}
+	}
 	
 	public function index()
 	{

@@ -78,47 +78,72 @@
 
 					<div style="border-top: 1px dotted #d5d5d5" class="mt-3 mb-3"></div>
 
-
-					<?php if($book_status == 1): ; ?>
-
+					<?php if($session): ?>
 					
-					<div class="product_count" >
-						<label for="qty">Quantity:</label>
-						<input type="text" name="qty" id="sst" maxlength="12" value="1" title="Quantity:" class="input-text qty">
-						<button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
-						 class="increase items-count" type="button">
-							<i class="lnr lnr-chevron-up"></i>
-						</button>
-						<button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;"
-						 class="reduced items-count" type="button">
-							<i class="lnr lnr-chevron-down"></i>
-						</button>
-					</div>
-					<div class="card_area">
-						<a class="main_btn addtocart" href="javascript:void(0)" data-id="<?php echo $id; ?>" data-title="<?php echo $title?>" data-price="<?php echo $price; ?>" data-photo="<?php echo $photo; ?> " data-author="<?php echo $authorsname; ?>" data-genre="<?php echo $genresname; ?>" >
-							<i class="lnr lnr-cart mr-3"></i>
-							Add to Cart
-						</a>
-					</div>
+						<?php if($book_status == 1): ; ?>
+
+							<div class="product_count" >
+								<label for="qty">Quantity:</label>
+								<input type="text" name="qty" id="sst" maxlength="12" value="1" title="Quantity:" class="input-text qty">
+								<button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
+								 class="increase items-count" type="button">
+									<i class="lnr lnr-chevron-up"></i>
+								</button>
+								<button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;"
+								 class="reduced items-count" type="button">
+									<i class="lnr lnr-chevron-down"></i>
+								</button>
+							</div>
+							<div class="card_area">
+								<a class="main_btn addtocart" href="javascript:void(0)" data-id="<?php echo $id; ?>" data-title="<?php echo $title?>" data-price="<?php echo $price; ?>" data-photo="<?php echo $photo; ?> " data-author="<?php echo $authorsname; ?>" data-genre="<?php echo $genresname; ?>" >
+									<i class="lnr lnr-cart mr-3"></i>
+									Add to Cart
+								</a>
+							</div>
+
+						<?php else: ?>
+							
+							<div class="product_count" >
+								<label for="qty">File Size : 
+									<?php echo $filesize; ?> GB
+								</label>
+
+								
+							</div>
+							
+							<div class="card_area">
+								<a class="main_btn" href="<?php echo ($pdf) ?>" download> 
+								<i class="lnr lnr-download mr-3"></i>
+								Download 
+								</a>
+								<span class="text-success"> Available </span>
+							</div>		
+
+						<?php endif; ?>
 
 					<?php else: ?>
-					
-					<div class="product_count" >
-						<label for="qty">File Size : 
-							<?php echo $filesize; ?> GB
-						</label>
-
+						<?php if($book_status == 1): ; ?>
 						
-					</div>
-					<div class="card_area">
-						<a class="main_btn" href="<?php echo ($pdf) ?>" download> 
-							<i class="lnr lnr-download mr-3"></i>
-							Download 
-						</a>
-						<span class="text-success"> Available </span>
-					</div>
+							<div class="card_area">
+								<a class="genric-btn disable" style="background: #1641ff; color: #fff;"> 
+									<i class="lnr lnr-cart mr-3"></i>
+									Add to Cart 
+								</a>
+								<span class="text-danger"> Please Login! </span>
+							</div>
 
-					<?php endif; ?>
+						<?php else: ?>
+						
+							<div class="card_area">
+								<a class="genric-btn disable" style="background: #1641ff; color: #fff;"> 
+									<i class="lnr lnr-download mr-3"></i>
+									Download 
+								</a>
+								<span class="text-danger"> Please Login! </span>
+							</div>
+						<?php endif; ?>
+
+					<?php endif;?>
 				</div>
 			</div>
 		</div>

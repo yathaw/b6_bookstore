@@ -22,7 +22,7 @@
 					<table class="table">
 						<thead>
 							<tr>
-								<th scope="col">No.</th>
+								<th scope="col" class="text-center">No.</th>
 								<th scope="col">Product</th>
 								<th scope="col">Price</th>
 								<th scope="col">Quantity</th>

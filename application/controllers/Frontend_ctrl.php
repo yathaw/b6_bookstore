@@ -6,7 +6,7 @@ class Frontend_ctrl extends CI_Controller
 	
 	public function index()
 	{
-		
+		$data['session'] = $this->session->userdata('logged_in');
 		$data['authors'] = $this->Author_mdl->list();
 		$data['genres'] = $this->Genre_mdl->list();
 
@@ -21,6 +21,7 @@ class Frontend_ctrl extends CI_Controller
 
 	public function book_detail()
 	{
+		$data['session'] = $this->session->userdata('logged_in');
 		$data['authors'] = $this->Author_mdl->list();
 		$data['genres'] = $this->Genre_mdl->list();
 
@@ -36,6 +37,7 @@ class Frontend_ctrl extends CI_Controller
 
 	public function author_detail()
 	{
+		$data['session'] = $this->session->userdata('logged_in');
 		$data['authors'] = $this->Author_mdl->list();
 		$data['genres'] = $this->Genre_mdl->list();
 
@@ -52,6 +54,7 @@ class Frontend_ctrl extends CI_Controller
 
 	public function genre_detail()
 	{
+		$data['session'] = $this->session->userdata('logged_in');
 		$data['authors'] = $this->Author_mdl->list();
 		$data['genres'] = $this->Genre_mdl->list();
 
@@ -68,6 +71,7 @@ class Frontend_ctrl extends CI_Controller
 
 	public function libraries()
 	{
+		$data['session'] = $this->session->userdata('logged_in');
 		$data['authors'] = $this->Author_mdl->list();
 		$data['genres'] = $this->Genre_mdl->list();
 
@@ -78,8 +82,22 @@ class Frontend_ctrl extends CI_Controller
 		$this->load->view('include/frontendtemplate',$data);
 	}
 
+	public function all()
+	{
+		$data['session'] = $this->session->userdata('logged_in');
+		$data['authors'] = $this->Author_mdl->list();
+		$data['genres'] = $this->Genre_mdl->list();
+
+		$data['allbooks'] = $this->Book_mdl->list();
+
+		$data['innerdata'] = 'frontend/all';
+
+		$this->load->view('include/frontendtemplate',$data);
+	}
+
 	public function free()
 	{
+		$data['session'] = $this->session->userdata('logged_in');
 		$data['authors'] = $this->Author_mdl->list();
 		$data['genres'] = $this->Genre_mdl->list();
 
@@ -92,6 +110,7 @@ class Frontend_ctrl extends CI_Controller
 
 	public function premium()
 	{
+		$data['session'] = $this->session->userdata('logged_in');
 		$data['authors'] = $this->Author_mdl->list();
 		$data['genres'] = $this->Genre_mdl->list();
 
@@ -102,15 +121,9 @@ class Frontend_ctrl extends CI_Controller
 		$this->load->view('include/frontendtemplate',$data);
 	}
 
-	public function order()
-	{
-		$data['authors'] = $this->Author_mdl->list();
-		$data['genres'] = $this->Genre_mdl->list();	
+	
 
-		$data['innerdata'] = 'frontend/cart';
 
-		$this->load->view('include/frontendtemplate',$data);
-	}
 }
 
 ?>

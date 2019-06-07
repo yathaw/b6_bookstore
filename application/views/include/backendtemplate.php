@@ -300,7 +300,7 @@
 										<div class="dropdown-divider"></div>
 										<a class="dropdown-item" href="#">Account Setting</a>
 										<div class="dropdown-divider"></div>
-										<a class="dropdown-item" href="#">Logout</a>
+										<a class="dropdown-item" href="<?php echo base_url('logout') ?>">Logout</a>
 									</li>
 								</div>
 							</ul>
@@ -371,17 +371,19 @@
 							</a>
 						</li>
 
-						<li class="nav-item <?php if($this->uri->segment(2)=="library") {echo "active";}?>">
-							<a href="<?php echo base_url('backend/library') ?>">
-								<i class="fas fa-store-alt"></i>
-								<p> Library </p>
-							</a>
-						</li>
+						
 
 						<li class="nav-item <?php if($this->uri->segment(2)=="book") {echo "active";}?>">
 							<a href="<?php echo base_url('backend/book') ?>">
 								<i class="fas fa-book-open"></i>
 								<p> Book </p>
+							</a>
+						</li>
+
+						<li class="nav-item <?php if($this->uri->segment(2)=="request") {echo "active";}?>">
+							<a href="<?php echo base_url('backend/request') ?>">
+								<i class="fas fa-book-open"></i>
+								<p> Request Book </p>
 							</a>
 						</li>
 
@@ -392,6 +394,14 @@
 								<p> Author </p>
 							</a>
 						</li>
+
+						<li class="nav-item <?php if($this->uri->segment(2)=="library") {echo "active";}?>">
+							<a href="<?php echo base_url('backend/library') ?>">
+								<i class="fas fa-store-alt"></i>
+								<p> Library </p>
+							</a>
+						</li>
+
 
 						<li class="nav-item <?php if($this->uri->segment(2)=="genre") {echo "active";}?>">
 							<a href="<?php echo base_url('backend/genre') ?>">

@@ -65,16 +65,33 @@ $route['library'] = 'Frontend_ctrl/libraries';
 $route['all'] = 'Frontend_ctrl/all';
 $route['free'] = 'Frontend_ctrl/free';
 $route['premium'] = 'Frontend_ctrl/premium';
-$route['request'] = 'Frontend_ctrl/request';
-$route['order'] = 'Frontend_ctrl/order';
+
+// Request
+$route['request'] = 'Request_ctrl/form';
+$route['request/send'] = 'Request_ctrl/send';
+
+// Order
+$route['order'] = 'Order_ctrl/order';
+$route['addtocart'] = 'Order_ctrl/addtocart';
+$route['confirm']	=	'Order_ctrl/confirm';
+$route['order/history'] = 'Order_ctrl/order_history';
+$route['order/detail/:num'] = 'Order_ctrl/order_detail';
+
+// Profile
+$route['profile'] = 'User_ctrl/profile';
+$route['profile/edit'] = 'User_ctrl/profile_edit';
+$route['profile/update'] = 'User_ctrl/profile_update';
+$route['profile/password'] = 'User_ctrl/password_form';
+$route['profile/password/update'] = 'User_ctrl/password_change';
+
 
 //Authentication
 $route['login'] = 'Auth_ctrl';
-$route['validation'] = 'Auth_ctrl/validation';
+$route['authentication'] = 'Auth_ctrl/authentication';
 $route['logout'] = 'Auth_ctrl/logout';
 
 $route['register'] = 'Auth_ctrl/register';
-$route['check'] = 'Auth_ctrl/register';
+$route['check'] = 'Auth_ctrl/check';
 
 
 // Author
@@ -113,9 +130,16 @@ $route['backend/library/edit/:num'] = 'Library_ctrl/edit';
 $route['backend/library/delete/:num'] = 'Library_ctrl/delete';
 $route['backend/library/update'] = 'Library_ctrl/update';
 
+// Order
+$route['backend/order'] = 'Order_ctrl';
+$route['backend/order/detail/:num'] = 'Order_ctrl/detail';
+$route['backend/order/confirm/:num'] = 'Order_ctrl/order_confirm';
 
+// Request
+$route['backend/request'] = 'Request_ctrl/index';
 
-
+// Dashboard
+$route['backend/dashboard'] = 'Dashboard_ctrl';
 
 
 

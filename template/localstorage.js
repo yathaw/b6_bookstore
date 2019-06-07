@@ -1,5 +1,7 @@
 $(document).ready(function()
 {
+	var total=0;
+
 	cartnoti();
 	showtable();
 
@@ -21,8 +23,6 @@ $(document).ready(function()
 				});
 			}
 		
-		console.log(totalqty);
-
 		$('.count_cart').html(totalqty);
 	}
 
@@ -77,13 +77,13 @@ $(document).ready(function()
 			var mycart = localstorageitem.mycart;
 
 			var mytable ='';
-			var subtotal =0; var total=0;
 			var j=1;
 
 			$.each(mycart,function (i,v) 
 			{
 				if (v) 
 				{
+					var result; var sst;
 					var id = v.id;
 					var title = v.title;
 					var price = v.price;
@@ -92,38 +92,136 @@ $(document).ready(function()
 					var genre = v.genre;
 					var qty = v.qty;
 
-					subtotal += price * qty;
-					total += subtotal ++;
+					var subtotal = parseInt(price) * parseInt(qty);
 
-					console.log(total);
 
-					mytable += '<tr>'+
-								'<td>'+j+'</td>'+
-								'<td>'+title+'</td>'+
+
+					mytable +='<tr>'+
+								'<td class="text-center">'+j+
+									'<br><button class="btn btn-default remove"> <i class="fa fa-times text-danger"> </i> </button>'+
+								'</td>'+
+								'<td><div class="media">'+
+										'<div class="d-flex">'+
+											'<img src="'+photo+'" alt="" style="width:100px; height:150px">'+
+										'</div>'+
+										'<div class="media-body">'+
+											'<h4>'+title+'</h4>'+
+											'<p>Author : '+author+' </p>'+
+											'<p>Genre : '+genre+'</p>'+
+										'</div>'+
+									'</div></td>'+
 								'<td>'+price+'</td>'+
 								'<td>'+
-										'<div class="product_count">;'+
+										'<div class="product_count">'+
 										'<input type="text" name="qty" id="sst" maxlength="12" value="'+qty+'" title="Quantity:" class="input-text qty">'+
-										'<button onclick="'+var result = document.getElementById("sst"); var sst = result.value; if( !isNaN( sst )) result.value++;return false;" class="increase items-count" type="button">'+
+										'<button class="plus increase items-count " data-id='+id+' type="button">'+
 											'<i class="lnr lnr-chevron-up"></i>'+
 										'</button>'+
-										'<button onclick="var result = document.getElementById("sst"); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;" class="reduced items-count" type="button">'+
+										'<button id="delete_btn" class="reduced items-count minus" data-id='+id+' type="button">'+
 											'<i class="lnr lnr-chevron-down"></i>'+
 										'</button></div> '+
 								'</td>'+
 								'<td>'+subtotal+'</td>'+
-								'</tr>';
+								'</tr>'
 					j++;
 
+					total += subtotal++;
 
 				}
+
+
 			});
+
+			mytable += '<tr>'+
+						'<td></td>'+
+						'<td></td>'+
+						'<td></td>'+
+
+						'<td><h5>Subtotal</h5></td>'+
+						'<td><h5>'+total+'</h5></td></tr>';
+
+			mytable +='<tr class="out_button_area">'+
+						'<td></td>'+
+						'<td></td>'+
+						'<td></td>'+
+						'<td></td>'+
+						'<td> <div class="checkout_btn_inner">'+
+								'<a class="gray_btn" href="">Continue Shopping</a>'+
+								'<a class="main_btn">Proceed to checkout</a>'+
+							  '</div> </td>'+
+							'</tr>'
 
 			$('tbody').html(mytable);
 
 		}
 
 	}
+
+	// Add Quantity
+	$('tbody').on('click','.plus',function(){
+        var id=$(this).data('id');
+        var localstorageitem=localStorage.getItem('cart');
+        var localstorageitem=JSON.parse(localstorageitem);
+        var mycart = localstorageitem.mycart;
+
+        $.each(mycart,function (i,v) 
+		{
+			if (v.id == id) 
+			{
+				v.qty++;
+			}
+		})
+		
+		cart = JSON.stringify(localstorageitem);
+		localStorage.setItem('cart',cart);
+		showtable();
+    });
+
+    // Minus Quantity
+	$('tbody').on('click','.minus',function(){
+        var id=$(this).data('id');
+        var localstorageitem=localStorage.getItem('cart');
+        var localstorageitem=JSON.parse(localstorageitem);
+        var mycart = localstorageitem.mycart;
+
+        $.each(mycart,function (i,v) 
+		{
+			var cartid = v.id;
+			if (v.id == id) 
+			{				
+				v.qty--;
+				if (v.qty === 0) 
+				{
+					console.log(cartid);
+				}
+			}
+		})
+		
+		cart = JSON.stringify(localstorageitem);
+		localStorage.setItem('cart',cart);
+		showtable();
+    });
 	
+
+	$('tbody').on('click','.main_btn',function(){
+        var localstorageitem=localStorage.getItem('cart');
+        var cart=JSON.parse(localstorageitem);
+
+        totalamount = total;
+        var filepath = "confirm"; 
+
+        $.ajax({
+              type:'POST',
+              url:'addtocart',
+              data:{cart:cart,total:totalamount},
+              success:function(data)
+              {
+                localStorage.clear();
+				window.location.href=filepath;
+              }
+
+        })
+
+	});
 
 })
