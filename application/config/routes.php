@@ -66,6 +66,13 @@ $route['all'] = 'Frontend_ctrl/all';
 $route['free'] = 'Frontend_ctrl/free';
 $route['premium'] = 'Frontend_ctrl/premium';
 
+
+// Mail ( Send Admin email account to request email )
+$route['mail'] = 'Mail_ctrl';
+$route['mail/send'] = 'Mail_ctrl/send';
+$route['mail/success'] = 'Main_ctrl/success';
+
+
 // Request
 $route['request'] = 'Request_ctrl/form';
 $route['request/send'] = 'Request_ctrl/send';

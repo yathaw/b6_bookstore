@@ -30,37 +30,26 @@
 				</div>
 				<div class="col-lg-6">
 					<div class="login_form_inner">
-						<h3>Log in to enter</h3>
+						<h3> Request Admin Accout </h3>
 
-						<?php if($this->session->flashdata('register')): ?>
+						<?php if(isset($success_message)): ?>
 							<div class="alert alert-dismissible alert-success">
 								<button class="close" type="button" data-dismiss="alert"> X </button>
-								<strong> WELCOME!! </strong> <br>
-								<?php echo $this->session->flashdata('register') ?>
+								<strong> Well Done! </strong> <br>
+								<?php echo $success_message; ?>
 							</div>
 						<?php endif; ?>
 
-						<form action="<?php echo base_url('authentication') ?>" method="POST" class="row login_form" id="contactForm" novalidate="novalidate">
+						<form action="<?php echo base_url('mail/send') ?>" method="POST" class="row login_form" id="contactForm" novalidate="novalidate">
 							<div class="col-md-12 form-group">
 								<input type="email" class="form-control" id="name" name="email" placeholder="Email">
 								<span class="text-danger"> <?php echo form_error('email') ?> </span>
 							</div>
+							
 							<div class="col-md-12 form-group">
-								<input type="password" class="form-control" id="name" name="password" placeholder="Password">
-
-								<span class="text-danger"> <?php echo form_error('password') ?> </span>
-							</div>
-							<div class="col-md-12 form-group">
-								<div class="creat_account">
-									
-								</div>
-							</div>
-							<div class="col-md-12 form-group">
-								<button type="submit" value="submit" class="btn submit_btn">Log In</button>
-								<a href="<?php echo base_url('mail') ?>">
-									Do you want to log in with admin role? Click Here.
-
-								</a>
+								<button type="submit" value="submit" class="btn submit_btn">
+									Send
+								</button>
 							</div>
 						</form>
 					</div>
